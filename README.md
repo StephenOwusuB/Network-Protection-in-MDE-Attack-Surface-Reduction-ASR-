@@ -18,25 +18,26 @@ For all of these to work, SmartScreen must be enabled, and Network Protection mu
 3. Scroll down to **Rules**.
 4. Under Rules, select **Indicators**.
 5. You will see file hashes, IP addresses, URLs/Domains, and Certificates.
-
+![file hashes](https://github.com/StephenOwusuB/Implementing-Microsoft-Defender-for-Enterprise-Security/blob/main/images/Network%20protection/MDE%20onboard%2058.png)
 ## Web Content Filtering
 
 1. Scroll down and select **Web Content Filtering**.
 2. Click on **Add Policy** to add a policy.
 3. Specify the name for the web content filtering.
 4. Under **Block Categories**, select the category you would like to block.
+   ![Web flitering](https://github.com/StephenOwusuB/Implementing-Microsoft-Defender-for-Enterprise-Security/blob/main/images/Network%20protection/MDE%20onboard%2059.png)
 
 Network protection can block either URLs or IP addresses. It uses the database of SmartScreen to protect your devices from known malicious URLs. It can:
 - Block IP/URL addresses from your own threat intelligence custom indicators.
 - Block unsanctioned services from Microsoft Defender for Cloud Apps.
 - Block browser access to websites based on category (Web Content Filtering).
 - Block Command and Control (C2) content.
-
+![Web filtering](https://github.com/StephenOwusuB/Implementing-Microsoft-Defender-for-Enterprise-Security/blob/main/images/Network%20protection/MDE%20onboard%2060.png)
 When a user accesses a website, the following takes place:
 1. Known good reputation is set to **Allowed**.
 2. Unknown or uncertain reputation is set to **Audit**, which allows the user to access or unblock the domain or URL. (The user gets **OK**, **Unblock**, **Feedback**. If the user selects **OK**, the domain or URL is blocked. If the user selects **Unblock**, the webpage is released for the user to access for 24 hours and then it is blocked again.)
 3. Known bad (malicious) reputation is set to **Block**. The user gets a pop-up to select either **OK** or **Feedback**. If the user selects **OK**, the connection is ended. If the user selects **Feedback**, they will have the option to create a ticket. There's no unblock option.
-
+  
 ## Adding Indicators to Control Access to URLs
 
 1. Under **Indicators**, select the **URL** tab and click on **Add Item**.
@@ -72,3 +73,14 @@ If you select **Block Execution**:
 2. Click **Submit** to save the policy.
 
 ## Enabling, Disabling, and Auditing Network Protection in Power
+
+ ![Allow](https://github.com/StephenOwusuB/Implementing-Microsoft-Defender-for-Enterprise-Security/blob/main/images/Network%20protection/MDE%20onboard%2061.png)
+   ![Allow](https://github.com/StephenOwusuB/Implementing-Microsoft-Defender-for-Enterprise-Security/blob/main/images/Network%20protection/MDE%20onboard%2062.png)
+   ![Allow](https://github.com/StephenOwusuB/Implementing-Microsoft-Defender-for-Enterprise-Security/blob/main/images/Network%20protection/MDE%20onboard%2063.png)
+   ![Audit](https://github.com/StephenOwusuB/Implementing-Microsoft-Defender-for-Enterprise-Security/blob/main/images/Network%20protection/MDE%20onboard%2064.png)
+   ![Audit](https://github.com/StephenOwusuB/Implementing-Microsoft-Defender-for-Enterprise-Security/blob/main/images/Network%20protection/MDE%20onboard%2065.png)
+   ![Audit](https://github.com/StephenOwusuB/Implementing-Microsoft-Defender-for-Enterprise-Security/blob/main/images/Network%20protection/MDE%20onboard%2066.png)
+   ![Warn](https://github.com/StephenOwusuB/Implementing-Microsoft-Defender-for-Enterprise-Security/blob/main/images/Network%20protection/MDE%20onboard%2068.png)
+   ![Warn](https://github.com/StephenOwusuB/Implementing-Microsoft-Defender-for-Enterprise-Security/blob/main/images/Network%20protection/MDE%20onboard%2069.png)
+   ![Block](https://github.com/StephenOwusuB/Implementing-Microsoft-Defender-for-Enterprise-Security/blob/main/images/Network%20protection/MDE%20onboard%2070.png)
+   ![Block](https://github.com/StephenOwusuB/Implementing-Microsoft-Defender-for-Enterprise-Security/blob/main/images/Network%20protection/MDE%20onboard%2071.png)
